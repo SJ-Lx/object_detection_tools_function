@@ -19,16 +19,8 @@ class Trans_labels:
             os.remove(self.val_txt)
 
         self.classes = {
-            'lying':0,
-            'standing':1,
-            'sitting':2,
-            'squatting':3,
-            'others':4,
-            'lying_unsure':5,
-            'standing_unsure':6,
-            'sitting_unsure':7,
-            'squatting_unsure':8,
-            'others_unsure':9
+            'Person':0,
+           
         }
 
     def rw_json(self, json_path, taken):
@@ -130,5 +122,5 @@ class Trans_labels:
         return keypoint
 
 
-tran = Trans_labels(root_path='/mnt/data/guozebin/pose/1262')
+tran = Trans_labels(root_path='/content/drive/MyDrive/golf_YOLO/JSON')
 tran()
